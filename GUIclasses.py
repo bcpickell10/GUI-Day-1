@@ -14,7 +14,8 @@ class GreetingApp:
         self.btn1.grid()  # Corrected from self.btn.grid()
 
     def goodbye_method(self):
-        print("Hello world")
+        self.label1.config(text="Goodbye")
+    
 
 app = GreetingApp(root)  # Pass root to the GreetingApp constructor
 root.mainloop()
