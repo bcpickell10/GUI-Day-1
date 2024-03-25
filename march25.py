@@ -14,6 +14,9 @@ class Employee:
 
     def email(self):
         return self.first + "." + self.last + "@company.com"
-
+    def fullname(self):
+        return self.first+" "+self.last 
 empl1 = Employee("Braden", "Pickell")
-print(empl1.email())
+empl2 = Employee("Hillary","Cliffbar")
+print(empl1.fullname())
+print(empl2.email())
